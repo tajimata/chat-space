@@ -11,6 +11,7 @@
 ### Association
 - has_many :users_groups
 - has_many :messages
+- has_many :groups
 
 
 ## messagesテーブル
@@ -19,17 +20,18 @@
 |image|text||
 |text|text||
 |user_id|integer|null: false, foreign_key: true|
+|group_id|integer|null: false, foreign_key: true|
 ### Association
-- belongs_to :users
+- belong_to :users
 
 
 ## groupsテーブル
 |Column|Type|Options|
 |------|----|-------|
-|user_id|integer|null: false, foreign_key: true|
-|comment_id|integer|null: false, foreign_key: true|
+|name|integer|null: false, foreign_key: true|
 ### Association
 - has_many :users_groups
+- has_many :users
 
 ## users_groupsテーブル
 |Column|Type|Options|
@@ -37,5 +39,5 @@
 |user_id|integer|null: false, foreign_key: true|
 |comment_id|integer|null: false, foreign_key: true|
 ### Association
-- belongs_to :tweets
-- belongs_to :users
+- belong_to :messages
+- belong_to :users
