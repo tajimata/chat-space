@@ -1,6 +1,12 @@
-@import "./reset";
+@import "reset";
 @import "font-awesome";
-@import "side_bar.scss";
-@import "main_bar.scss";
-@import "top_bar.scss";
-@import "variable.scss";
+@import "side_bar";
+@import "main_bar";
+@import "top_bar";
+@import "variable";
+@import "user";
+
+@import "config/colors";
+@import "modules/flash";
+
+@import "group";
