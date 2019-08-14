@@ -5,4 +5,3 @@ module ControllerMacros
   end
 end
 
-# aaa
