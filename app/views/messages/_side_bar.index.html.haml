@@ -1,0 +1,46 @@
+
+-# .top_bar
+-#   %p.top_bar__text グループを作成しました
+
+
+.side_ber
+
+  .header_left
+    %p.header_left__text 
+      = current_user.name
+
+    = link_to edit_user_path(current_user) do
+      = fa_icon 'cog', class: 'header_left__new'
+
+    =link_to new_group_path do
+      = fa_icon 'edit', class: 'header_left__edit'
+
+    -# = link_to new_group_path do
+    -#   = fa_icon 'pencil-square-o', class: 'icon'  
+      
+    -# = link_to edit_user_path(current_user) do
+    -#       = fa_icon 'cog', class: 'icon'
+
+      -#   =link_to "https://www.facebook.com/", class: "header_left__new" do
+      -# = fa_icon 'cog'
+
+
+  .groups
+    - current_user.groups.each do |group|
+      .group
+        = link_to group_messages_path(group) do
+          .group__name
+            = group.name
+          .group__message
+            = group.show_last_message
+            
+
+  -# .content_left
+  -#   %p.content_left__top-text ああああああ
+
+  -#   %p.content_left__under-text フェスって素敵
+
+
+
+
+
