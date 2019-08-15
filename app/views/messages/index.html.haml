@@ -18,36 +18,6 @@
     = render @messages
 
 
-  -# .content_right
-    
-  -#   .title
-  -#     %p.title__name 右メイン
-
-  -#     %p.title__date 時間
-
-    
-
-  -#   %p.content_right__text 今日は
-
-  -#   %p.content_right__2-date 音楽が好き
-
-  -#   %p.content_right__2-text さよなら
-
-
-
-  -# .footer
-  -#   -# = form_for [@group, @message] do |f|
-  -#     .form
-  -#       .message_parent
-  -#         .message
-  -#           .message__text type a message
-  -#         .btn
-  -#           =link_to "https://www.facebook.com/", class: "btn__image" do
-  -#             = fa_icon 'image'
-          
-  -#       .btm
-  -#         %a.send-btn Send
-
 
   .form
     = form_for [@group, @message] do |f|
