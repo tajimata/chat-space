@@ -1,10 +1,7 @@
 $(function(){
 
-  // sign = n >= 0 ? 'big' : 'small';
-  // console.log(sign);
 
   function buildHTML(message){
-    // if ( message.image ) {
 
       var imagehtml = message.image == null ? "" : `<img src="${message.image}" class="lower-message__image">`
       var html = `<div class=message>
