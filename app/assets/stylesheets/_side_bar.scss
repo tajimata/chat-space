@@ -42,6 +42,10 @@
     background-color: #2f3e51;
     height: calc(100vh - 100px);
     padding: 0 20px;
+
+    & a:visited {
+      color: white;
+    }
     .group {
       box-sizing: border-box;
       padding: 20px 0 40px;
@@ -54,4 +58,9 @@
       }
     }
   }
+}
+
+a{
+  text-decoration: none;
+  
 }

@@ -24,11 +24,13 @@
     .edit{
       height: 40px;
       line-height:40px;
-
       float: right;
       padding: 0px 20px;
       margin-top: 28px;
       border: solid 1px #38aef0;
+      & a:visited {
+        color: #38aef0;
+      }
 
     }
       
