@@ -4,9 +4,14 @@
 
   .header_right
     .group  
-      %p.group-name 右ヘッダー
+      %p.group-name 
+        = @group.name
 
-      %p.group-menber ロッキン
+      %p.group-menber
+        Member :
+        - @group.users.each do |user|
+          = user.name
+
     
     .edit
       =link_to "https://www.facebook.com/", class: "space__btn" do
