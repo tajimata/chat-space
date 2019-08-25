@@ -28,22 +28,25 @@
       padding: 0px 20px;
       margin-top: 28px;
       border: solid 1px #38aef0;
-      & a:visited {
-        color: #38aef0;
-      }
-
+        // & a:visited {
+        //   color: #38aef0;
+        // }
+        &__button{
+          color: #38aef0;
+            // & a:visited {
+            //   color: #38aef0;
+            // }
+          }
+          a:visited {
+            color: #38aef0;
+          }
+    
     }
       
-      &-btn{
-      // line-height:100px;
-      color: #38aef0;
-      }
-      & a:visited {
-        color: #38aef0;
-      }
+      
+    
     
   }
-
 
 
   .messages {
